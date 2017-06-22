@@ -1,0 +1,31 @@
+{
+  "name": "sfyd",
+  "description": "Website Reboot for San Francisco Young Democrats",
+  "main": "gulpfile.js",
+  "authors": [
+    "felix <adfelix2@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "SFYD",
+    "San",
+    "Francisco",
+    "Young",
+    "Democrats",
+    "Wesbite"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "smooth-scrollbar": "^7.3.1"
+  }
+}
