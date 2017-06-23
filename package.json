@@ -44,8 +44,8 @@
     "wiredep": "^4.0.0"
   },
   "engines" : {
-    "node" : ">=7.6.0",
-    "npm" : ">=4.1.2"
+    "node" : "7.6.0",
+    "npm" : "4.1.2"
   },
   "repository": {
     "type": "git",
