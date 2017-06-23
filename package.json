@@ -4,8 +4,7 @@
   "description": "San Francisco Young Democrats",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "install": "npm install"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Felix Dasgupta",
@@ -39,12 +38,11 @@
   },
   "dependencies": {
     "del": "^2.2.2",
-    "main-bower-files": "^2.13.1",
     "node-static": "^0.7.9",
     "wiredep": "^4.0.0"
   },
   "engines" : {
-    "node" : "7.6.0",
+    "node" : "6.11.0",
     "npm" : "4.1.2"
   },
   "repository": {
