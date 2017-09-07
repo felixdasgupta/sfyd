@@ -2,3 +2,29 @@
     background: #000 url(../img/sfyd-hero.jpg) no-repeat center center fixed !important;
     background-size: cover !important;
 }
+
+.project-modal {
+    overflow: hidden !important;
+}
+
+#contact2 {
+    background: url(../img/san-fran.jpg) no-repeat center center scroll !important;
+    background-size: cover !important;
+}
+
+#about {
+    background: url(../img/2017_new_era.jpg) no-repeat center center !important;
+    background-size: cover !important;
+}
+
+ul.people {
+    list-style: none;
+    text-align: left;
+    li {
+        line-height: 1.5;
+        margin-bottom: 15px;
+        b {
+            font-size: larger;
+        }
+    }
+}

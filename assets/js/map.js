@@ -10,7 +10,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.748668, -73.988615), // 6th Ave, New York, NY 23458
+        center: new google.maps.LatLng(37.7749, -122.4194),
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,

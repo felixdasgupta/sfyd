@@ -114,7 +114,7 @@ gulp.task('concat-js', function () {
 //Add or Remove Tasks from Array
 var default_tasks = ['css'];
 gulp.task('default', default_tasks, function(){
-  gulp.watch([config.basePath + '/**/*'], ['default']);
+  gulp.watch(["assets/scss/**.scss"], ['default']);
 });
 
 gulp.task('move', ['move-img'], function(){
