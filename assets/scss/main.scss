@@ -13,10 +13,11 @@
 }
 
 #about {
-    background: url(../img/2017_new_era.jpg) no-repeat center center !important;
+    background: url(../img/sfyd2/header.jpg) no-repeat top center fixed !important;
     background-size: 100% auto !important;
     padding: 0 0;
     background-color: black !important;
+    height: 100% !important;
 }
 
 @mixin aspect-ratio($width, $height) {
@@ -53,12 +54,12 @@
         transition: all 500ms ease-out;
         color: #000;
     }
-    &:hover {
-        .header {
-            opacity: 1;
-            background: rgba(255,255,255, 0.7);
-        }
-    }
+    // &:hover {
+    //     .header {
+    //         opacity: 1;
+    //         background: rgba(255,255,255, 0.7);
+    //     }
+    // }
 
 }
 
@@ -72,4 +73,16 @@ ul.people {
             font-size: larger;
         }
     }
+}
+
+#action {
+    .dev {background: #000 !important;}
+}
+
+.split-padding3 {
+    background-color: #fff !important;
+}
+
+#team {
+    background: #151515;
 }

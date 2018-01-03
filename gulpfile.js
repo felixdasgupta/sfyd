@@ -35,7 +35,7 @@ config = {
 // MOVE IMAGES TO CSS DIR
 ///////////////////////////////////////////////////////
 gulp.task('move-img', function() {
-  return gulp.src(['./assets/img/sfyd/**/*'])
+  return gulp.src(['./assets/img/**/*'])
     .pipe(gulp.dest('./src/img/'));
 });
 
