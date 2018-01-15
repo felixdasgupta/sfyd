@@ -8,8 +8,8 @@
 }
 
 #contact2 {
-    background: url(../img/san-fran.jpg) no-repeat center center scroll !important;
-    background-size: cover !important;
+    background: rgb(0%, 62%, 100%);
+    padding: 50px 0 50px;
 }
 
 #about {
@@ -19,6 +19,8 @@
     background-color: black !important;
     height: 100% !important;
 }
+
+
 
 @mixin aspect-ratio($width, $height) {
     position: relative;
@@ -36,6 +38,21 @@
         right: 0;
         bottom: 0;
     }
+}
+
+@mixin photo-mask($op:0.7){
+  &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgb(21,21,21) !important;
+      opacity: $op;
+      width: 100vw;
+      height: 100vh;
+  }
 }
 
 .gridBlock {
@@ -76,13 +93,68 @@ ul.people {
 }
 
 #action {
-    .dev {background: #000 !important;}
+    background: url(../img/bg/bg10.jpg) center center no-repeat;
+    background-size: cover !important;
+    @include photo-mask($op:0.7)
+    .dev {
+        background: none !important;
+    }
+}
+
+#team {
+    background: url(../img/bg/bg2.jpg) center center no-repeat fixed;
+    background-size: cover !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    .split-padding0 {
+        background: rgba(21,21,21, 0.7) !important;
+    }
+}
+
+#about3 {
+    background: url(../img/bg/bg7.jpg) center center no-repeat fixed;
+    background-size: cover !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    .split-padding3 {
+        background: rgba(0,0,0, 0.0) !important;
+        color: #fff !important;
+        height: 100%;
+    }
+    .row {
+        background: rgba(21,21,21, 0.7) !important;
+    }
+}
+
+#action2 {
+    padding: 50px 0 100px !important;
+    display: none;
+}
+
+#project {
+    background: url(../img/bg/bg11.jpg) center center no-repeat;
+    background-size: cover !important;
+    padding: 100px 0 100px;
+    .container {
+        width: 100% !important;
+        padding: 0 0 0 0 !important;
+    }
 }
 
 .split-padding3 {
     background-color: #fff !important;
 }
 
-#team {
-    background: #151515;
+#history {
+    background: url(../img/bg/bg4.jpg) center center no-repeat fixed;
+    background-size: cover !important;
+}
+
+#sponsor {
+    background: url(../img/bg/bg7.jpg) center center no-repeat fixed;
+    background-size: cover !important;
+    @include photo-mask($op:0.7)
+    .split-padding2 {
+        background: rgba(21,21,21, 0.7) !important;
+    }
 }
