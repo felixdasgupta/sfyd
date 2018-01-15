@@ -1,3 +1,14 @@
+body {
+    overflow-x: hidden!important;
+    width: 100%;
+}
+
+section {
+    overflow: hidden !important;
+    width: 100%;
+}
+
+
 .intro {
     background: #000 url(../img/sfyd-hero.jpg) no-repeat center center fixed !important;
     background-size: cover !important;
@@ -95,7 +106,7 @@ ul.people {
 #action {
     background: url(../img/bg/bg10.jpg) center center no-repeat;
     background-size: cover !important;
-    @include photo-mask($op:0.7)
+    @include photo-mask($op:0.5)
     .dev {
         background: none !important;
     }
@@ -106,8 +117,9 @@ ul.people {
     background-size: cover !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    overflow: hidden !important;
     .split-padding0 {
-        background: rgba(21,21,21, 0.7) !important;
+        background: rgba(21,21,21, 0.5) !important;
     }
 }
 
@@ -116,25 +128,28 @@ ul.people {
     background-size: cover !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    overflow: hidden !important;
     .split-padding3 {
         background: rgba(0,0,0, 0.0) !important;
         color: #fff !important;
         height: 100%;
     }
     .row {
-        background: rgba(21,21,21, 0.7) !important;
+        background: rgba(21,21,21, 0.5) !important;
     }
 }
 
 #action2 {
     padding: 50px 0 100px !important;
     display: none;
+    overflow: hidden !important;
 }
 
 #project {
     background: url(../img/bg/bg11.jpg) center center no-repeat;
     background-size: cover !important;
     padding: 100px 0 100px;
+    overflow: hidden !important;
     .container {
         width: 100% !important;
         padding: 0 0 0 0 !important;
@@ -148,13 +163,24 @@ ul.people {
 #history {
     background: url(../img/bg/bg4.jpg) center center no-repeat fixed;
     background-size: cover !important;
+    overflow: hidden !important;
 }
 
 #sponsor {
     background: url(../img/bg/bg7.jpg) center center no-repeat fixed;
     background-size: cover !important;
+    overflow: hidden !important;
     @include photo-mask($op:0.7)
     .split-padding2 {
         background: rgba(21,21,21, 0.7) !important;
     }
+}
+
+
+#leadership-team {
+    background: url(../img/sfyd2/header.jpg) top left no-repeat;
+    background-size: cover !important;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 50px;
 }
